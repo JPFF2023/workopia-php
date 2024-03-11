@@ -8,13 +8,7 @@
  */
 
  function basePath($path){
-    $baseName =  __DIR__.$path;
-
-    if(file_exists($baseName)){
-      require $baseName;
-    } else {
-      echo "View '{$path}' not found";
-    }
+    return __DIR__.$path;
  }
 
 /**
